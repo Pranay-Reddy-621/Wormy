@@ -1,0 +1,96 @@
+.book-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #424242;
+  margin: 0.75rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.book-list li:hover {
+  background: #616161;
+}
+
+.book-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.book-cover {
+  width: 100px;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.rating-icon {
+  width: 80px;
+  height: auto;
+  margin: 0;
+}
+
+.book-list li button {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #616161;
+  color: #e5e5e5;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.book-list li button:hover {
+  background: #9c27b0;
+  color: #fff;
+}
+
+.book-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border: 1px solid #616161;
+  border-radius: 6px;
+  background: #2d2d2d;
+  color: #e5e5e5;
+  font-size: 1rem;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #9c27b0;
+}
+
+.search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}

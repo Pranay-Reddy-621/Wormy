@@ -1,0 +1,51 @@
+.book-grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.book-grid-item {
+  background: #424242;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.book-grid-item:hover {
+  background: #616161;
+}
+
+.book-grid-cover {
+  width: 100%;
+  max-width: 180px;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 4px;
+  margin: 0 auto 0.5rem auto;
+}
+
+.book-grid-item button {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #616161;
+  color: #e5e5e5;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.book-grid-item button:hover {
+  background: #9c27b0;
+  color: #fff;
+}
+
+.rating-icon {
+  width: 50px;
+  height: auto;
+  margin: 0.5rem 0;
+}
